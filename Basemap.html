@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<<html>
+	<head>
+		<meta charset='utf-8' />
+		<title>함께해요</title>
+		<!-- cdn가지고 맵박스 js랑 css 가져오기 -->
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.css' rel='stylesheet' />
+		<style>
+			body{margin: 0; padding: 0}
+			#map {position: absolute; top: 0; bottom: 0; width: 100%;}
+		</style>
+	</head>
+	<body>
+		
+			<div id='map'></div>
+			<script>
+				mapboxgl.accessToken = 'pk.eyJ1IjoicGlsMDcwNiIsImEiOiJlcWVuRlIwIn0.ywYJJbqo3Rdier4qkejnCg'; //권필 mapbox accessToken
+				var map = new mapboxgl.Map({
+					/*지도안에 들어갈 내용은 여기다가 쓰면 됩니다요*/
+					container: 'map',
+					style: 'mapbox://styles/mapbox/dark-v9',
+					center: [126.98955, 37.5651],	//서울에서 시작하고
+					zoom: 11 						//줌레벨은 11
+				});
+		</script>
+
+
+
+	</body>
+</html>
